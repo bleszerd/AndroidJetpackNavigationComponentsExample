@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SendMoneyFinallyFragment"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/send_money_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:text="Send Money to"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/person_name_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="CUDIFOSSA"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textSize="42sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_marginTop="60dp"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_gravity="center"
+      android:text="ALL OKAY"
+      android:textStyle="bold"
+      android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
+      />
+</FrameLayout>

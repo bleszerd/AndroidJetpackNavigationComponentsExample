@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.github.bleszerd.jetpacknavigation.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome">
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_sendMoneyFragment"
+            app:destination="@id/sendMoneyFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_balanceFragment"
+            app:destination="@id/balanceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_welcomeFragment_to_transactionsFragment"
+            app:destination="@id/transactionsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/balanceFragment"
+        android:name="com.github.bleszerd.jetpacknavigation.BalanceFragment"
+        android:label="fragment_balance"
+        tools:layout="@layout/fragment_balance" />
+
+    <fragment
+        android:id="@+id/sendMoneyFragment"
+        android:name="com.github.bleszerd.jetpacknavigation.SendMoneyFragment"
+        android:label="fragment_send_money"
+        tools:layout="@layout/fragment_send_money">
+
+        <action
+            android:id="@+id/action_sendMoneyFragment_to_sendMoneyToFragment"
+            app:destination="@id/sendMoneyToFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/sendMoneyFinallyFragment"
+        android:name="com.github.bleszerd.jetpacknavigation.SendMoneyFinallyFragment"
+        android:label="fragment_send_money_finally"
+        tools:layout="@layout/fragment_send_money_finally" />
+
+    <fragment
+        android:id="@+id/sendMoneyToFragment"
+        android:name="com.github.bleszerd.jetpacknavigation.SendMoneyToFragment"
+        android:label="fragment_send_money_to"
+        tools:layout="@layout/fragment_send_money_to">
+
+        <action
+            android:id="@+id/action_sendMoneyToFragment_to_sendMoneyFinallyFragment"
+            app:destination="@id/sendMoneyFinallyFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionsFragment"
+        android:name="com.github.bleszerd.jetpacknavigation.TransactionsFragment"
+        android:label="fragment_transactions"
+        tools:layout="@layout/fragment_transactions" />
+</navigation>
