@@ -39,7 +39,7 @@
         android:layout_gravity="center">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/text_input_name"
+            android:id="@+id/text_input_amount"
             android:inputType="numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

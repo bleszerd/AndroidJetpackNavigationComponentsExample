@@ -63,13 +63,27 @@
         android:id="@+id/sendMoneyFinallyFragment"
         android:name="com.github.bleszerd.jetpacknavigation.SendMoneyFinallyFragment"
         android:label="fragment_send_money_finally"
-        tools:layout="@layout/fragment_send_money_finally" />
+        tools:layout="@layout/fragment_send_money_finally">
+
+        <argument
+            android:name="recipient"
+            android:defaultValue="None" />
+
+        <argument
+            android:name="amount"
+            app:argType="com.github.bleszerd.jetpacknavigation.Money" />
+
+    </fragment>
 
     <fragment
         android:id="@+id/sendMoneyToFragment"
         android:name="com.github.bleszerd.jetpacknavigation.SendMoneyToFragment"
         android:label="fragment_send_money_to"
         tools:layout="@layout/fragment_send_money_to">
+
+        <argument
+            android:name="recipient"
+            android:defaultValue="None" />
 
         <action
             android:id="@+id/action_sendMoneyToFragment_to_sendMoneyFinallyFragment"
