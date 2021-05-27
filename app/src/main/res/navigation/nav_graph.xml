@@ -73,6 +73,13 @@
             android:name="amount"
             app:argType="com.github.bleszerd.jetpacknavigation.Money" />
 
+        <action
+            android:id="@+id/action_sendMoneyFinallyFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment"
+            app:enterAnim="@anim/slide_bottom_to_top"
+            app:popUpTo="@id/welcomeFragment"
+            app:popUpToInclusive="true" />
+
     </fragment>
 
     <fragment

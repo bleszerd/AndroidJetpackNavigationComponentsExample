@@ -43,4 +43,11 @@
       android:textStyle="bold"
       android:textAppearance="@style/TextAppearance.MaterialComponents.Headline1"
       />
+
+    <Button
+        android:id="@+id/back_to_welcome_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:text="All done" />
 </FrameLayout>
